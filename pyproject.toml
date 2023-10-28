@@ -45,7 +45,8 @@ dependencies = [
     "pycparser==2.21", 
     "pyrender",
     "json5",
-    "pandas"
+    "pandas",
+    "Pillow",
 ]
 
 [project.optional-dependencies]

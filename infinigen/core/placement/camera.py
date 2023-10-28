@@ -167,8 +167,7 @@ def nodegroup_active_cam_info(nw: NodeWrangler):
         k: info.outputs[k] for k in info.outputs.keys()
     })
 
-def set_active_camera(rig_id, subcam_id):
-    camera = get_camera(rig_id, subcam_id)
+def set_active_camera(camera):
     bpy.context.scene.camera = camera
 
     ng = nodegroup_active_cam_info() # does not create a new node group, retrieves singleton

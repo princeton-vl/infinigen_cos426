@@ -330,7 +330,7 @@ def execute_tasks(
         butil.spawn_empty(f'{infinigen.__version__=}')
         compose_scene_func(output_folder, scene_seed)
 
-    camera = cam_util.set_active_camera(*camera_id)
+    camera = cam_util.set_active_camera(cam_util.get_camera(*camera_id))
     if focal_length is not None:
         camera.data.lens = focal_length
 
