@@ -150,7 +150,8 @@ def create_param_demo(args, seed):
             xy=(10, 10), 
             text='\n'.join(f'{k}: {v:.2f}' for k, v in overrides.items()), 
             fill=(76, 252, 85),
-            font=ImageFont.truetype("arial.ttf", size=50)
+            # font=ImageFont.truetype("arial.ttf", size=50)
+            font=ImageFont.load_default()
         )
         img.save(imgpath)
         
